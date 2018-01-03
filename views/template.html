@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>{{titulo}}</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="/css/main.css" >
+	</head>
+	<body>
+		<h1>{{titulo}}</h1>
+
+		<h2>Persona</h2>
+			<div class="container py-5 d-flex align-items-start flex-wrap justify-content-center">
+					<div class="card m-2 ">
+					<img class="card-img-top " src="/img/{{persona.foto}}" alt="Card image cap">
+					<div class="card-block">
+					<h4 class="card-title">
+								<p><b>Nombres: </b>{{persona.nombres}}</p>
+								<p><b>Apellidos: </b>{{persona.apellidos}}</p>
+								<p><b>Edad: </b>{{persona.edad}}</p>
+					</h4>
+					</div>
+			</div>
+		</div>
+	 <h2>Amigos</h2>
+	<div class="container py-5 d-flex align-items-start flex-wrap justify-content-center">
+			{% for amigos in amigos %}
+			<div class="card m-2 ">
+				<img class="card-img-top " src="/img/{{amigos.foto}}" alt="Card image cap">
+				<div class="card-block">
+					<h4 class="card-title">
+						<p><b>Nombres: </b>{{amigos.nombres}}</p>
+						<p><b>Apellidos: </b>{{amigos.apellidos}}</p>
+						<p><b>Edad: </b>{{amigos.edad}}</p>
+				</h4>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+			<!-- jQuery first, then Tether, then Bootstrap JS. -->
+			<script src="/js/jquery-3.1.1.slim.min.js" ></script>
+			<script src="/js/tether.min.js" ></script>
+			<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

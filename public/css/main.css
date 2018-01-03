@@ -1,0 +1,36 @@
+.card {
+	width: 170px;
+}
+.card-img-top {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+}
+.card-title {
+	font-size: 1.2rem;
+}
+/**************************
+GENERAL
+***************************/
+/* cuerpo */
+body {
+  font-family: 'Aharoni', sans-serif;
+	background-color: #e29d61;
+  color:#e29d61;
+}
+
+/* titulos */
+h1 {
+    margin: 15px 25px;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0 70px 0;
+
+}
+h1, h2 {
+	font-family: 'BANKGOTHIC MD BT', sans-serif;
+  color: #fff;
+}
